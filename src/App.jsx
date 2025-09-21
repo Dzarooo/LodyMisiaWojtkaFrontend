@@ -19,10 +19,10 @@ function App() {
       <div className="flex-1 ![background-size:_75px_100%] lg:![background-size:_100px_100%] contentBackground">
 
         {/* Is opened and scoops */}
-        <div className="w-full h-[95vh] lg:h-[90vh] flex">
+        <div className="w-full h-[95vh] lg:h-[90vh] flex flex-col lg:flex-row">
 
           {/* Is opened div */}
-          <div className="flex-[50%] h-full flex justify-center items-center flex-col">
+          <div className="flex-[50%] h-full flex justify-center items-center flex-col scale-60 sm:scale-75 lg:scale-100">
             <div className="bg-white p-30 rounded-[100%_70%_110%_60%] flex flex-col flex-nowrap justify-center items-center">
               <p className="font-[Imperial_Script] text-6xl text-nowrap">Dzisiaj mamy</p>
               <p className="font-[Imperial_Script] text-8xl text-green-600 font-bold border-b-2 border-black">Otwarte</p>
