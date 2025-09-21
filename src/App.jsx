@@ -1,10 +1,16 @@
 import './App.css'
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 
 function App() {
 
   return (
-    <div className="bg-yellow-400">
-      <p>nie wierze ze tu cos jest</p>
+    <div className="w-[100vw] min-h-[100vh] flex flex-col">
+      <Header />
+      <div className="flex-1 contentBackground">
+        <p>jakis wybitny content</p>
+      </div>
+      <Footer />
     </div>
   )
 }
