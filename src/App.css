@@ -1,5 +1,19 @@
 .contentBackground {
     background: #d9d9d9;
     background: linear-gradient(90deg, rgba(217, 217, 217, 1) 0%, rgba(217, 217, 217, 1) 50%, rgba(235, 235, 235, 1) 50%, rgba(235, 235, 235, 1) 100%);
-    background-position:center;
+    background-position: center;
 }
+
+.scoopsBackground {
+    background:
+        linear-gradient(135deg, #f5c483 21px, #d7ae7a 22px, #d7ae7a 24px, transparent 24px, transparent 67px, #d7ae7a 67px, #d7ae7a 69px, transparent 69px),
+        linear-gradient(225deg, #f5c483 21px, #d7ae7a 22px, #d7ae7a 24px, transparent 24px, transparent 67px, #d7ae7a 67px, #d7ae7a 69px, transparent 69px)0 64px;
+        background-color: #f5c483;
+    background-size: 64px 128px;
+}
+
+/* background:
+        linear-gradient(135deg, #d7ae7a 42px, #c49e70 44px, #c49e70 48px, transparent 48px, transparent 134px, #c49e70 134px, #c49e70 138px, transparent 138px),
+        linear-gradient(225deg, #d7ae7a 42px, #c49e70 44px, #c49e70 48px, transparent 48px, transparent 134px, #c49e70 134px, #c49e70 138px, transparent 138px)0 128px;
+    background-color: #d7ae7a;
+    background-size: 128px 256px; */
