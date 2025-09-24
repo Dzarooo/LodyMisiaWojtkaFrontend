@@ -8,12 +8,43 @@
     background:
         linear-gradient(135deg, #f5c483 21px, #d7ae7a 22px, #d7ae7a 24px, transparent 24px, transparent 67px, #d7ae7a 67px, #d7ae7a 69px, transparent 69px),
         linear-gradient(225deg, #f5c483 21px, #d7ae7a 22px, #d7ae7a 24px, transparent 24px, transparent 67px, #d7ae7a 67px, #d7ae7a 69px, transparent 69px)0 64px;
-        background-color: #f5c483;
+    background-color: #f5c483;
     background-size: 64px 128px;
 }
 
-/* background:
-        linear-gradient(135deg, #d7ae7a 42px, #c49e70 44px, #c49e70 48px, transparent 48px, transparent 134px, #c49e70 134px, #c49e70 138px, transparent 138px),
-        linear-gradient(225deg, #d7ae7a 42px, #c49e70 44px, #c49e70 48px, transparent 48px, transparent 134px, #c49e70 134px, #c49e70 138px, transparent 138px)0 128px;
-    background-color: #d7ae7a;
-    background-size: 128px 256px; */
+.singleScoopBackground {
+    background-image:
+        radial-gradient(circle at bottom center,
+            rgba(0, 0, 0, 0.0) 6%,
+            rgba(0, 0, 0, 0.05) 7.5%,
+            rgba(0, 0, 0, 0.05) 9%,
+            rgba(0, 0, 0, 0.0) 11%,
+            rgba(0, 0, 0, 0.0) 17.5%,
+            rgba(0, 0, 0, 0.05) 19.5%,
+            rgba(0, 0, 0, 0.05) 20.5%,
+            rgba(0, 0, 0, 0.0) 23%,
+            rgba(0, 0, 0, 0.0) 30%,
+            rgba(0, 0, 0, 0.05) 32%,
+            rgba(0, 0, 0, 0.05) 33%,
+            rgba(0, 0, 0, 0.0) 36%,
+            rgba(0, 0, 0, 0.0) 44%,
+            rgba(0, 0, 0, 0.05) 46%,
+            rgba(0, 0, 0, 0.05) 47%,
+            rgba(0, 0, 0, 0.0) 50%,
+            rgba(0, 0, 0, 0.0) 63%,
+            rgba(0, 0, 0, 0.05) 65%,
+            rgba(0, 0, 0, 0.05) 66%,
+            rgba(0, 0, 0, 0.0) 68%,
+            rgba(0, 0, 0, 0.0) 85%,
+            rgba(0, 0, 0, 0.05) 87%,
+            rgba(0, 0, 0, 0.05) 88%,
+            rgba(0, 0, 0, 0.0) 90%
+            );
+
+    background-position:
+        0 20px;
+
+    background-size: 100% 100%;
+
+    background-repeat: no-repeat;
+}

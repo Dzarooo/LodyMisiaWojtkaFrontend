@@ -8,6 +8,17 @@ function App() {
 
   const [isSidebarShown, setIsSidebarShown] = useState(false)
 
+  const scoops = [
+    {name: "Cytrynowe", color: 'rgb(255, 186, 0)', text: 'rgb(0,0,0)'},
+    {name: "Truskawkowe", color: 'rgb(255, 162, 162)', text: 'rgb(0,0,0)'},
+    {name: "Sorbet Kiwi Jabłko Awokado", color: 'rgb(5, 223, 114)', text: 'rgb(0,0,0)'},
+    {name: "Guma Balonowa", color: 'rgb(81, 162, 255)', text: 'rgb(0,0,0)'},
+    {name: "Waniliowe", color: 'rgb(255, 255, 255)', text: 'rgb(0,0,0)'},
+    {name: "Ciasteczkowe", color: 'rgb(123, 51, 6)', text: 'rgb(255,255,255)'},
+    {name: "Smerfowe", color: 'rgb(0, 184, 219)', text: 'rgb(0,0,0)'},
+    {name: "Słony orzeszek ziemny", color: 'rgb(0, 188, 125)', text: 'rgb(0,0,0)'},
+  ]
+
   return (
     <div className="w-[100vw] min-h-[100vh] flex flex-col">
 
@@ -40,16 +51,51 @@ function App() {
                 <h1 className="font-[Imperial_Script] text-8xl text-nowrap [-webkit-text-stroke:1px]">Dzisiejsze gałki</h1>
               </div>
 
-              <div className="relative w-[700px] h-[350px] 3xl:w-[900px] 3xl:h-[450px] rounded-4xl">
+              {/* scoops container */}
+              <div className="relative w-[700px] h-[433px] 3xl:w-[900px] 3xl:h-[600px] rounded-4xl">
+                {/* countertop */}
                 <div className="absolute top-0 left-0 w-[100%] h-[100%] bg-slate-300 rounded-3xl"></div>
+                {/* glass */}
                 <div className="absolute top-0 left-0 w-[100%] h-[100%]">
                   <div className="bg-blue-500/50 rounded-2xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] h-[90%] relative">
-                    <div className="absolute -translate-x-1/2 -translate-y-1/2 top-87/100 left-94/100 w-[10%] h-[5%] bg-blue-300/50 -rotate-45 rounded-full"></div>
-                    <div className="absolute -translate-x-1/2 -translate-y-1/2 top-82/100 left-92/100 w-[15%] h-[5%] bg-blue-300/50 -rotate-45 rounded-full"></div>
-                    <div className="absolute -translate-x-1/2 -translate-y-1/2 w-[4%] aspect-square bg-slate-300 rounded-full top-11/200 left-5/200"></div>
-                    <div className="absolute -translate-x-1/2 -translate-y-1/2 w-[4%] aspect-square bg-slate-300 rounded-full top-11/200 left-195/200"></div>
-                    <div className="absolute -translate-x-1/2 -translate-y-1/2 w-[4%] aspect-square bg-slate-300 rounded-full top-189/200 left-5/200"></div>
-                    <div className="absolute -translate-x-1/2 -translate-y-1/2 w-[4%] aspect-square bg-slate-300 rounded-full top-189/200 left-195/200"></div>
+
+
+                    {/* corners on glass */}
+                    <div className="absolute -translate-x-1/2 -translate-y-1/2 w-[4%] aspect-square bg-slate-300 rounded-full top-10/200 left-6/200"></div>
+                    <div className="absolute -translate-x-1/2 -translate-y-1/2 w-[4%] aspect-square bg-slate-300 rounded-full top-10/200 left-194/200"></div>
+                    <div className="absolute -translate-x-1/2 -translate-y-1/2 w-[4%] aspect-square bg-slate-300 rounded-full top-190/200 left-6/200"></div>
+                    <div className="absolute -translate-x-1/2 -translate-y-1/2 w-[4%] aspect-square bg-slate-300 rounded-full top-190/200 left-194/200"></div>
+
+                    {/* scoops */}
+                    <div className="absolute -translate-x-1/2 -translate-y-1/2 top-3/10 left-1/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[0].color }}>
+                      <p className="text-xl text-center wrap-anywhere" style={{ color: scoops[0].text }}>{scoops[0].name}</p>
+                    </div>
+                    <div className="absolute -translate-x-1/2 -translate-y-1/2 top-3/10 left-2/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[1].color }}>
+                      <p className="text-xl text-wrap text-center wrap-anywhere" style={{ color: scoops[1].text }}>{scoops[1].name}</p>
+                    </div>
+                    <div className="absolute -translate-x-1/2 -translate-y-1/2 top-3/10 left-3/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[2].color }}>
+                      <p className="text-xl text-wrap text-center wrap-anywhere" style={{ color: scoops[2].text }}>{scoops[2].name}</p>
+                    </div>
+                    <div className="absolute -translate-x-1/2 -translate-y-1/2 top-3/10 left-4/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[3].color }}>
+                      <p className="text-xl text-wrap text-center wrap-anywhere" style={{ color: scoops[3].text }}>{scoops[3].name}</p>
+                    </div>
+                    <div className="absolute -translate-x-1/2 -translate-y-1/2 top-7/10 left-1/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[4].color }}>
+                      <p className="text-xl text-wrap text-center wrap-anywhere" style={{ color: scoops[4].text }}>{scoops[4].name}</p>
+                    </div>
+                    <div className="absolute -translate-x-1/2 -translate-y-1/2 top-7/10 left-2/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[5].color }}>
+                      <p className="text-xl text-wrap text-center wrap-anywhere" style={{ color: scoops[5].text }}>{scoops[5].name}</p>
+                      </div>
+                    <div className="absolute -translate-x-1/2 -translate-y-1/2 top-7/10 left-3/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[6].color }}>
+                      <p className="text-xl text-wrap text-center wrap-anywhere" style={{ color: scoops[6].text }}>{scoops[6].name}</p>
+                    </div>
+                    <div className="absolute -translate-x-1/2 -translate-y-1/2 top-7/10 left-4/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[7].color }}>
+                      <p className="text-xl text-wrap text-center wrap-anywhere" style={{ color: scoops[7].text }}>{scoops[7].name}</p>
+                    </div>
+
+                    {/* light on glass */}
+                    <div className="absolute -translate-x-1/2 -translate-y-1/2 top-90/100 left-94/100 w-[10%] h-[2%] bg-blue-300/50 -rotate-45 rounded-full"></div>
+                    <div className="absolute -translate-x-1/2 -translate-y-1/2 top-87/100 left-92/100 w-[15%] h-[2%] bg-blue-300/50 -rotate-45 rounded-full"></div>
+
                   </div>
                 </div>
               </div>
