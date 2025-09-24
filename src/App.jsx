@@ -68,28 +68,28 @@ function App() {
 
                     {/* scoops */}
                     <div className="absolute -translate-x-1/2 -translate-y-1/2 top-3/10 left-1/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[0].color }}>
-                      <p className="text-xl text-center wrap-anywhere" style={{ color: scoops[0].text }}>{scoops[0].name}</p>
+                      <p className="text-xl text-center wrap-anywhere font-medium" style={{ color: scoops[0].text }}>{scoops[0].name}</p>
                     </div>
                     <div className="absolute -translate-x-1/2 -translate-y-1/2 top-3/10 left-2/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[1].color }}>
-                      <p className="text-xl text-wrap text-center wrap-anywhere" style={{ color: scoops[1].text }}>{scoops[1].name}</p>
+                      <p className="text-xl text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[1].text }}>{scoops[1].name}</p>
                     </div>
                     <div className="absolute -translate-x-1/2 -translate-y-1/2 top-3/10 left-3/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[2].color }}>
-                      <p className="text-xl text-wrap text-center wrap-anywhere" style={{ color: scoops[2].text }}>{scoops[2].name}</p>
+                      <p className="text-xl text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[2].text }}>{scoops[2].name}</p>
                     </div>
                     <div className="absolute -translate-x-1/2 -translate-y-1/2 top-3/10 left-4/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[3].color }}>
-                      <p className="text-xl text-wrap text-center wrap-anywhere" style={{ color: scoops[3].text }}>{scoops[3].name}</p>
+                      <p className="text-xl text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[3].text }}>{scoops[3].name}</p>
                     </div>
                     <div className="absolute -translate-x-1/2 -translate-y-1/2 top-7/10 left-1/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[4].color }}>
-                      <p className="text-xl text-wrap text-center wrap-anywhere" style={{ color: scoops[4].text }}>{scoops[4].name}</p>
+                      <p className="text-xl text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[4].text }}>{scoops[4].name}</p>
                     </div>
                     <div className="absolute -translate-x-1/2 -translate-y-1/2 top-7/10 left-2/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[5].color }}>
-                      <p className="text-xl text-wrap text-center wrap-anywhere" style={{ color: scoops[5].text }}>{scoops[5].name}</p>
+                      <p className="text-xl text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[5].text }}>{scoops[5].name}</p>
                       </div>
                     <div className="absolute -translate-x-1/2 -translate-y-1/2 top-7/10 left-3/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[6].color }}>
-                      <p className="text-xl text-wrap text-center wrap-anywhere" style={{ color: scoops[6].text }}>{scoops[6].name}</p>
+                      <p className="text-xl text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[6].text }}>{scoops[6].name}</p>
                     </div>
                     <div className="absolute -translate-x-1/2 -translate-y-1/2 top-7/10 left-4/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[7].color }}>
-                      <p className="text-xl text-wrap text-center wrap-anywhere" style={{ color: scoops[7].text }}>{scoops[7].name}</p>
+                      <p className="text-xl text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[7].text }}>{scoops[7].name}</p>
                     </div>
 
                     {/* light on glass */}
