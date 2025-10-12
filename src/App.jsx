@@ -57,7 +57,7 @@ function App() {
               </div>
 
               {/* scoops container */}
-              <div className="scale-60 sm:scale-75 xl:scale-100 relative w-[750px] h-[433px] rounded-4xl">
+              <div className="scale-50 sm:scale-75 xl:scale-100 relative w-[700px] xl:w-[750px] h-[433px] rounded-4xl">
                 {/* countertop */}
                 <div className="absolute top-0 left-0 w-[100%] h-[100%] bg-slate-300 rounded-3xl"></div>
                 {/* glass */}
@@ -106,7 +106,7 @@ function App() {
               </div>
 
               <div className="xl:h-[200px]">
-                <p className="text-2xl sm:text-3xl xl:text-4xl xl:!mt-10 -translate-y-12 xl:-translate-y-0 text-nowrap italic font-light">Codziennie serwujemy inne smaki!</p>
+                <p className="text-xl sm:text-3xl xl:text-4xl xl:!mt-10 -translate-y-12 xl:-translate-y-0 text-nowrap italic font-light">Codziennie serwujemy inne smaki!</p>
               </div>
 
             </div>
