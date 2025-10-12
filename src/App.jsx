@@ -54,12 +54,19 @@ function App() {
               <div className="hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 top-105 left-40 w-[30px] h-[60px] rounded-b-full bg-pink-400"></div>
             </div>
 
-            <div className="hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 -top-8 left-8/10 w-[600px] aspect-video rounded-[100%] -rotate-12 bg-orange-400">
-              <div className="hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 top-100 left-60 w-[30px] h-[150px] rotate-12 rounded-b-full bg-orange-400"></div>
-              <div className="hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 top-90 left-72 w-[30px] h-[100px] rotate-12 rounded-b-full bg-orange-400"></div>
+            <div className="absolute -top-8 left-8/10">
+              <div className="hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 w-[600px] aspect-video rounded-[100%] -rotate-12 bg-orange-400"></div>
+
+              <div className="animate-[scoopsDrip_5s_ease-in-out_infinite] hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 top-60 -left-8 w-[30px] h-[150px] rounded-b-full bg-orange-400"></div>
+              <div className="animate-[scoopsDripFalling_5s_ease-in_infinite] [animation-delay:3200ms] [scale:0] hidden xl:block absolute -translate-x-1/2 top-75 -left-8 w-[30px] aspect-square rounded-full bg-orange-400"></div>
+
+              <div className="hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 top-50 left-2 w-[30px] h-[100px] rounded-b-full bg-orange-400"></div>
+
             </div>
 
 
+
+            {/* Scoops content */}
             <div className="w-full h-full flex items-center flex-col justify-center flex-nowrap">
 
               <div className="flex flex-col items-center justify-center flex-nowrap xl:h-[200px]">

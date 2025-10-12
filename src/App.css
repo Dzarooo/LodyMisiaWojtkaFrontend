@@ -38,8 +38,7 @@
             rgba(0, 0, 0, 0.0) 85%,
             rgba(0, 0, 0, 0.05) 87%,
             rgba(0, 0, 0, 0.05) 88%,
-            rgba(0, 0, 0, 0.0) 90%
-            );
+            rgba(0, 0, 0, 0.0) 90%);
 
     background-position:
         0 20px;
@@ -47,4 +46,39 @@
     background-size: 100% 100%;
 
     background-repeat: no-repeat;
+}
+
+@keyframes scoopsDrip {
+    0% {
+        transform: scaleY(100%);
+    }
+
+    85% {
+        transform: scaleY(170%);
+    }
+
+    90% {
+        transform: scaleY(95%);
+    }
+
+    100% {
+        transform: scaleY(100%);
+    }
+}
+
+@keyframes scoopsDripFalling {
+    0% {
+        scale: 0;
+    }
+
+    20% {
+        scale: 1;
+        translate: -50% 100%;
+    }
+
+    35% {
+        scale: 0;
+        translate: -50% 2500%;
+    }
+
 }
