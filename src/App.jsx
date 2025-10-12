@@ -43,7 +43,12 @@ function App() {
           </div>
 
           {/* Scoops */}
-          <div className="flex-[50%] xl:flex-[60%] scoopsBackground xl:[border-bottom-left-radius:_30%_80%] xl:[border-top-left-radius:_15%_40%] shadow-xl flex justify-center items-center flex-col gap-3">
+          <div className="relative flex-[50%] xl:flex-[60%] scoopsBackground xl:[border-bottom-left-radius:_30%_80%] xl:[border-top-left-radius:_15%_40%] shadow-xl flex justify-center items-center flex-col gap-3">
+
+            <div className="hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 -top-10 left-5/10 w-[400px] aspect-square rounded-full bg-pink-500"></div>
+            <div className="hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 -top-10 left-3/10 w-[400px] aspect-square rounded-full bg-pink-400"></div>
+            <div className="hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 -top-8 left-8/10 w-[600px] aspect-video rounded-[100%] -rotate-12 bg-orange-400"></div>
+
 
             <div className="w-full h-full flex items-center flex-col justify-center flex-nowrap">
 
