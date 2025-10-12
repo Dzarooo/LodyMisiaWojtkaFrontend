@@ -13,9 +13,9 @@ function App() {
     { name: "Truskawkowe", color: 'rgb(255, 162, 162)', text: 'rgb(0,0,0)' },
     { name: "Sorbet Kiwi Jabłko Awokado", color: 'rgb(5, 223, 114)', text: 'rgb(0,0,0)' },
     { name: "Guma Balonowa", color: 'rgb(81, 162, 255)', text: 'rgb(0,0,0)' },
-    { name: "sorbet bergamotka, grejpfrut z różowym pieprzem", color: 'rgb(255, 255, 255)', text: 'rgb(0,0,0)' },
+    { name: "Sorbet bergamotka, grejpfrut z różowym pieprzem", color: 'rgb(255, 255, 255)', text: 'rgb(0,0,0)' },
     { name: "Ciasteczkowe", color: 'rgb(123, 51, 6)', text: 'rgb(255,255,255)' },
-    { name: "tiramisu z winem marshalla i kawa arabica", color: 'rgb(0, 184, 219)', text: 'rgb(0,0,0)' },
+    { name: "Tiramisu z winem marshalla i kawa arabica", color: 'rgb(0, 184, 219)', text: 'rgb(0,0,0)' },
     { name: "Słony orzeszek ziemny", color: 'rgb(0, 188, 125)', text: 'rgb(0,0,0)' },
   ]
 
