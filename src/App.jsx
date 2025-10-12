@@ -9,14 +9,14 @@ function App() {
   const [isSidebarShown, setIsSidebarShown] = useState(false)
 
   const scoops = [
-    {name: "Cytrynowe", color: 'rgb(255, 186, 0)', text: 'rgb(0,0,0)'},
-    {name: "Truskawkowe", color: 'rgb(255, 162, 162)', text: 'rgb(0,0,0)'},
-    {name: "Sorbet Kiwi Jabłko Awokado", color: 'rgb(5, 223, 114)', text: 'rgb(0,0,0)'},
-    {name: "Guma Balonowa", color: 'rgb(81, 162, 255)', text: 'rgb(0,0,0)'},
-    {name: "sorbet bergamotka, grejpfrut z różowym pieprzem", color: 'rgb(255, 255, 255)', text: 'rgb(0,0,0)'},
-    {name: "Ciasteczkowe", color: 'rgb(123, 51, 6)', text: 'rgb(255,255,255)'},
-    {name: "tiramisu z winem marshalla i kawa arabica", color: 'rgb(0, 184, 219)', text: 'rgb(0,0,0)'},
-    {name: "Słony orzeszek ziemny", color: 'rgb(0, 188, 125)', text: 'rgb(0,0,0)'},
+    { name: "Cytrynowe", color: 'rgb(255, 186, 0)', text: 'rgb(0,0,0)' },
+    { name: "Truskawkowe", color: 'rgb(255, 162, 162)', text: 'rgb(0,0,0)' },
+    { name: "Sorbet Kiwi Jabłko Awokado", color: 'rgb(5, 223, 114)', text: 'rgb(0,0,0)' },
+    { name: "Guma Balonowa", color: 'rgb(81, 162, 255)', text: 'rgb(0,0,0)' },
+    { name: "sorbet bergamotka, grejpfrut z różowym pieprzem", color: 'rgb(255, 255, 255)', text: 'rgb(0,0,0)' },
+    { name: "Ciasteczkowe", color: 'rgb(123, 51, 6)', text: 'rgb(255,255,255)' },
+    { name: "tiramisu z winem marshalla i kawa arabica", color: 'rgb(0, 184, 219)', text: 'rgb(0,0,0)' },
+    { name: "Słony orzeszek ziemny", color: 'rgb(0, 188, 125)', text: 'rgb(0,0,0)' },
   ]
 
   return (
@@ -45,9 +45,19 @@ function App() {
           {/* Scoops */}
           <div className="relative flex-[50%] xl:flex-[60%] scoopsBackground xl:[border-bottom-left-radius:_30%_80%] xl:[border-top-left-radius:_15%_40%] shadow-xl flex justify-center items-center flex-col gap-3">
 
-            <div className="hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 -top-10 left-5/10 w-[400px] aspect-square rounded-full bg-pink-500"></div>
-            <div className="hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 -top-10 left-3/10 w-[400px] aspect-square rounded-full bg-pink-400"></div>
-            <div className="hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 -top-8 left-8/10 w-[600px] aspect-video rounded-[100%] -rotate-12 bg-orange-400"></div>
+            {/* Visual scoops */}
+            <div className="hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 -top-10 left-5/10 w-[400px] aspect-square rounded-full bg-pink-500">
+              <div className="hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 top-105 left-70 w-[30px] h-[100px] rounded-b-full bg-pink-500"></div>
+              <div className="hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 top-100 left-40 w-[30px] h-[50px] rounded-b-full bg-pink-500"></div>
+            </div>
+            <div className="hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 -top-10 left-3/10 w-[400px] aspect-square rounded-full bg-pink-400">
+              <div className="hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 top-105 left-40 w-[30px] h-[60px] rounded-b-full bg-pink-400"></div>
+            </div>
+
+            <div className="hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 -top-8 left-8/10 w-[600px] aspect-video rounded-[100%] -rotate-12 bg-orange-400">
+              <div className="hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 top-100 left-60 w-[30px] h-[150px] rotate-12 rounded-b-full bg-orange-400"></div>
+              <div className="hidden xl:block absolute -translate-x-1/2 -translate-y-1/2 top-90 left-72 w-[30px] h-[100px] rotate-12 rounded-b-full bg-orange-400"></div>
+            </div>
 
 
             <div className="w-full h-full flex items-center flex-col justify-center flex-nowrap">
@@ -89,7 +99,7 @@ function App() {
                     </div>
                     <div className="absolute -translate-x-1/2 -translate-y-1/2 top-7/10 left-2/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[5].color }}>
                       <p className="text-normal xl:text-lg text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[5].text }}>{scoops[5].name}</p>
-                      </div>
+                    </div>
                     <div className="absolute -translate-x-1/2 -translate-y-1/2 top-7/10 left-3/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[6].color }}>
                       <p className="text-normal xl:text-lg text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[6].text }}>{scoops[6].name}</p>
                     </div>
