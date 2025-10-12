@@ -20,7 +20,7 @@ function App() {
   ]
 
   return (
-    <div className="w-[100vw] min-h-[100vh] flex flex-col">
+    <div className="w-[100vw] max-w-full min-h-[100vh] flex flex-col">
 
       <OpenHoursSidebar isShown={isSidebarShown} setIsShown={setIsSidebarShown} />
 
@@ -30,10 +30,10 @@ function App() {
       <div className="flex-1 ![background-size:_75px_100%] lg:![background-size:_100px_100%] contentBackground">
 
         {/* Is opened and scoops */}
-        <div className="w-full 2xl:h-[90vh] flex flex-col 2xl:flex-row">
+        <div className="w-full min-h-[95vh] xl:min-h-auto xl:h-[90vh] flex flex-col xl:flex-row">
 
           {/* Is opened div */}
-          <div className="flex-[50%] 2xl:flex-[40%] flex justify-center items-center flex-col scale-60 sm:scale-75 2xl:scale-110">
+          <div className="flex-[50%] xl:flex-[40%] flex justify-center items-center flex-col scale-60 sm:scale-75 xl:scale-110">
             <div className="bg-white p-30 rounded-[100%_70%_110%_60%] flex flex-col flex-nowrap justify-center items-center">
               <p className="font-[Imperial_Script] text-6xl text-nowrap">Teraz mamy</p>
               <p className="font-[Imperial_Script] text-8xl text-green-600 font-bold border-b-2 border-black">Otwarte</p>
@@ -43,16 +43,16 @@ function App() {
           </div>
 
           {/* Scoops */}
-          <div className="flex-[50%] 2xl:flex-[60%] scoopsBackground 2xl:[border-bottom-left-radius:_30%_80%] 2xl:[border-top-left-radius:_15%_40%] shadow-xl flex justify-center items-center flex-col gap-3">
+          <div className="flex-[50%] xl:flex-[60%] scoopsBackground xl:[border-bottom-left-radius:_30%_80%] xl:[border-top-left-radius:_15%_40%] shadow-xl flex justify-center items-center flex-col gap-3">
 
             <div className="w-full h-full flex items-center flex-col justify-center flex-nowrap">
 
-              <div className="flex flex-col items-center justify-center flex-nowrap 2xl:h-[200px]">
-                <h1 className="text-6xl sm:text-7xl 2xl:text-8xl translate-y-12 2xl:translate-y-0 font-[Imperial_Script] text-nowrap [-webkit-text-stroke:1px]">Dzisiejsze gałki</h1>
+              <div className="flex flex-col items-center justify-center flex-nowrap xl:h-[200px]">
+                <h1 className="text-6xl sm:text-7xl xl:text-8xl translate-y-12 xl:translate-y-0 font-[Imperial_Script] text-nowrap [-webkit-text-stroke:1px]">Dzisiejsze gałki</h1>
               </div>
 
               {/* scoops container */}
-              <div className="scale-60 sm:scale-75 2xl:scale-100 relative w-[700px] h-[433px] rounded-4xl">
+              <div className="scale-60 sm:scale-75 xl:scale-100 relative w-[750px] h-[433px] rounded-4xl">
                 {/* countertop */}
                 <div className="absolute top-0 left-0 w-[100%] h-[100%] bg-slate-300 rounded-3xl"></div>
                 {/* glass */}
@@ -68,28 +68,28 @@ function App() {
 
                     {/* scoops */}
                     <div className="absolute -translate-x-1/2 -translate-y-1/2 top-3/10 left-1/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[0].color }}>
-                      <p className="text-normal 2xl:text-xl text-center wrap-anywhere font-medium" style={{ color: scoops[0].text }}>{scoops[0].name}</p>
+                      <p className="text-normal xl:text-lg text-center wrap-anywhere font-medium" style={{ color: scoops[0].text }}>{scoops[0].name}</p>
                     </div>
                     <div className="absolute -translate-x-1/2 -translate-y-1/2 top-3/10 left-2/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[1].color }}>
-                      <p className="text-normal 2xl:text-xl text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[1].text }}>{scoops[1].name}</p>
+                      <p className="text-normal xl:text-lg text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[1].text }}>{scoops[1].name}</p>
                     </div>
                     <div className="absolute -translate-x-1/2 -translate-y-1/2 top-3/10 left-3/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[2].color }}>
-                      <p className="text-normal 2xl:text-xl text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[2].text }}>{scoops[2].name}</p>
+                      <p className="text-normal xl:text-lg text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[2].text }}>{scoops[2].name}</p>
                     </div>
                     <div className="absolute -translate-x-1/2 -translate-y-1/2 top-3/10 left-4/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[3].color }}>
-                      <p className="text-normal 2xl:text-xl text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[3].text }}>{scoops[3].name}</p>
+                      <p className="text-normal xl:text-lg text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[3].text }}>{scoops[3].name}</p>
                     </div>
                     <div className="absolute -translate-x-1/2 -translate-y-1/2 top-7/10 left-1/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[4].color }}>
-                      <p className="text-normal 2xl:text-xl text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[4].text }}>{scoops[4].name}</p>
+                      <p className="text-normal xl:text-lg text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[4].text }}>{scoops[4].name}</p>
                     </div>
                     <div className="absolute -translate-x-1/2 -translate-y-1/2 top-7/10 left-2/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[5].color }}>
-                      <p className="text-normal 2xl:text-xl text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[5].text }}>{scoops[5].name}</p>
+                      <p className="text-normal xl:text-lg text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[5].text }}>{scoops[5].name}</p>
                       </div>
                     <div className="absolute -translate-x-1/2 -translate-y-1/2 top-7/10 left-3/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[6].color }}>
-                      <p className="text-normal 2xl:text-xl text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[6].text }}>{scoops[6].name}</p>
+                      <p className="text-normal xl:text-lg text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[6].text }}>{scoops[6].name}</p>
                     </div>
                     <div className="absolute -translate-x-1/2 -translate-y-1/2 top-7/10 left-4/5 w-[18%] h-[35%] rounded-xl outline-6 outline-slate-300 singleScoopBackground flex justify-center items-center" style={{ backgroundColor: scoops[7].color }}>
-                      <p className="text-normal 2xl:text-xl text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[7].text }}>{scoops[7].name}</p>
+                      <p className="text-normal xl:text-lg text-wrap text-center wrap-anywhere font-medium" style={{ color: scoops[7].text }}>{scoops[7].name}</p>
                     </div>
 
                     {/* light on glass */}
@@ -100,8 +100,8 @@ function App() {
                 </div>
               </div>
 
-              <div className="2xl:h-[200px]">
-                <p className="text-2xl sm:text-3xl 2xl:text-4xl 2xl:!mt-10 -translate-y-12 2xl:-translate-y-0 text-nowrap italic font-light">Codziennie serwujemy inne smaki!</p>
+              <div className="xl:h-[200px]">
+                <p className="text-2xl sm:text-3xl xl:text-4xl xl:!mt-10 -translate-y-12 xl:-translate-y-0 text-nowrap italic font-light">Codziennie serwujemy inne smaki!</p>
               </div>
 
             </div>
